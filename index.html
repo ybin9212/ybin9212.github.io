@@ -154,7 +154,7 @@
     분석 결과를 보고하는 것보다, 그 결과를 <strong>믿을 수 있게 만드는 데이터 구조</strong>를 만드는 일을 합니다.
   </p>
   <p class="contact">
-    <a href="mailto:ybin9212@gmail.com">ybin9212@gmail.com</a><span class="sep">·</span><a id="gh-link" href="https://github.com/ybin9212">github.com/ybin9212</a><span class="sep">·</span>퍼블리시스 그룹 Digitas — Data &amp; Digital Marketing Manager 재직 중
+    <a href="mailto:ybin9212@gmail.com">ybin9212@gmail.com</a><span class="sep">·</span>퍼블리시스 그룹 Digitas — Data &amp; Digital Marketing Manager 재직 중
   </p>
 </header>
 
@@ -377,16 +377,6 @@
 
 </div>
 <script>
-  // username.github.io 배포 시 GitHub 링크 자동 보정
-  (function(){
-    var h = location.hostname;
-    if(h.endsWith('.github.io')){
-      var u = h.split('.')[0];
-      var a = document.getElementById('gh-link');
-      a.href = 'https://github.com/' + u;
-      a.textContent = 'github.com/' + u;
-    }
-  })();
   // 인쇄 시 상세 펼침
   window.addEventListener('beforeprint', function(){
     document.querySelectorAll('details').forEach(function(d){ d.setAttribute('open','') });
