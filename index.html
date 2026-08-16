@@ -229,11 +229,11 @@
 
     <div class="project">
       <h4>글로벌 음원 스트리밍 서비스 S사 — MMP Attribution 분석 · Reporting Pipeline</h4>
-      <span class="meta">2025.12 – 진행 중 · Branch · Meta SAN · S3 · CM360 · mParticle</span>
+      <span class="meta">2025.12 – 진행 중 · Python · Branch · Meta SAN · S3 · GitHub Actions · CM360 · mParticle</span>
       <ul>
         <li>Branch–Meta SAN 분리 집계 구조를 Touch Type·Method 레벨로 분석해, 신규 광고 성과의 약 <strong>92~93%</strong>가 기존 리포팅에서 비가시화되던 원인 규명 — 동일 광고의 CPO가 집계 기준에 따라 <strong>16.8배</strong>(12,619원 vs 753원) 차이 나는 구조 확인</li>
         <li>기존·신규 Creative를 동일 캠페인·기간에 재집행하는 비교 실험을 설계해 기간 효과와 소재 효과를 분리 검증, MMP Vendor 공식 확인을 거쳐 리포팅 기준 재정립</li>
-        <li>약 <strong>650만 행</strong> Branch S3 RAW를 S3 Select 서버단 필터링으로 <strong>약 3천 행</strong>의 분석 데이터로 축소, Branch·Media·CM360을 통합하는 주간 분석 파이프라인 구축</li>
+        <li>Branch 글로벌팀과 API 수집 스펙(Dimension·Metric·주기·롤링 방식)을 직접 설계·협의하고 매주 S3 적재분을 GitHub Actions로 자동 수집 — 약 <strong>650만 행</strong> RAW를 S3 Select 서버단 필터링으로 <strong>약 3천 행</strong>으로 축소해 Branch·Media·CM360 통합 주간 파이프라인 구축</li>
       </ul>
       <details>
         <summary>문제 → 접근 → 결과 상세</summary>
@@ -353,7 +353,7 @@
 
 <section id="skills">
   <h2>SKILLS</h2>
-  <div class="srow"><span class="cat">Data &amp; Automation</span><span class="items">Python · SQL · Pandas · Airflow · AWS S3 · ETL · Data QA/Validation</span></div>
+  <div class="srow"><span class="cat">Data &amp; Automation</span><span class="items">Python · SQL · Pandas · Airflow · GitHub Actions · AWS S3 · ETL · Data QA/Validation</span></div>
   <div class="srow"><span class="cat">Measurement &amp; AdTech</span><span class="items">SA360 · Google Ads · CM360 · DV360 · Meta · Branch · Airbridge · GA4 · MMP Attribution</span></div>
   <div class="srow"><span class="cat">CDP / CRM</span><span class="items">Treasure Data · mParticle · Salesforce · ADID · Audience Enrichment</span></div>
   <div class="srow"><span class="cat">Data Integration</span><span class="items">Data Lake · API · Postback · Schema/Taxonomy Mapping · 매체 데이터 온보딩</span></div>
