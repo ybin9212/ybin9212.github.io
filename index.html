@@ -141,7 +141,7 @@
   <div class="value">
     <div class="v-head">반복 운영을 자동화합니다</div>
     <p class="v-desc">담당자 경험에 의존하던 반복 작업을, 검증 로직이 내장된 파이프라인으로 바꿉니다.</p>
-    <p class="v-ev">Weekly Cleansing <b>11시간 → 1.5시간</b> · 월간 리포팅 <b>4시간+ → 15분</b> · <b>650만 행 → 3천 행</b>, 분석에 필요한 데이터만 서버단 추출</p>
+    <p class="v-ev">Weekly Cleansing <b>11시간 → 1.5시간</b> · 월간 리포팅 <b>4시간+ → 내부 기록 약 15분</b> · <b>650만 행 → 3천 행</b>, 분석에 필요한 데이터만 서버단 추출</p>
   </div>
 </div>
 
@@ -176,7 +176,7 @@
         <div class="pab">
           <p><span class="lbl">PROBLEM</span><br>12개국에서 전달되는 광고 데이터의 파일 형식·언어·통화·Campaign Taxonomy·Conversion 기준이 모두 달랐고, 수작업 정제는 누락·중복·오분류 위험과 담당자 의존을 만들었다. Launch·YoY 분석은 국가별 Timezone과 Naming 차이로 동일 기준 비교가 어려웠다.</p>
           <p><span class="lbl">APPROACH</span><br>공통 Schema 정규화 파이프라인을 구축하고, 파일 구조가 바뀌어도 Header와 법인을 자동 식별하는 Rule 기반 Parser를 구성했다. 다중 Field Deduplication Key와 누락·이상치·Taxonomy Validation을 설계하고, Local Time을 절대시간으로 변환해 전작과 동일 경과시간 기준의 YoY 비교 체계를 만들었다.</p>
-          <p><span class="lbl">RESULT</span><br>Weekly Cleansing 11시간 → 1.5시간. 누적 49만 행의 일관 QA 운영. 집계 오류(-93%)를 실제 성과(+52%)로 정정해 글로벌 리포팅 신뢰성 확보. 분석 규칙을 LLM Wiki로 자산화해 세션이 바뀌어도 동일한 기준을 재사용.</p>
+          <p><span class="lbl">RESULT</span><br>Weekly Cleansing 11시간 → 1.5시간. 누적 49만 행의 일관 QA 운영. 집계 오류(-93%)를 실제 성과(+52%)로 정정해 글로벌 리포팅 안정성 향상. 분석 규칙을 LLM Wiki로 자산화해 세션이 바뀌어도 동일한 기준을 재사용.</p>
         </div>
       </details>
     </div>
@@ -221,7 +221,7 @@
       <h5>ADDITIONAL</h5>
       <ul>
         <li><strong>Publicis APAC Data Lake 한국 매체 온보딩</strong> — 네이버·카카오 데이터 구조 정리, Schema·Taxonomy Mapping 정의, Source–Lake 정합성 검증, 글로벌 데이터팀 협업</li>
-        <li><strong>글로벌 호텔 브랜드 월간 리포팅 자동화</strong> — CM360 기반 3단계 Workflow와 Conversion Deduplication 로직 구축, 월 <b class="num">4시간+ 수작업 → 약 15분</b></li>
+        <li><strong>글로벌 호텔 브랜드 월간 리포팅 자동화</strong> — CM360 기반 3단계 Workflow와 Conversion 중복 후보 식별 로직 구축, 월 <b class="num">4시간+ → 내부 기록 기준 약 15분</b></li>
         <li><strong>글로벌 자동차 브랜드 M사 Salesforce CRM</strong> — 약 <b class="num">5만 건</b> CRM Lead의 딜러 관할 지역 자동 분류 로직 구축, Global IT 협업 이슈 대응</li>
       </ul>
     </div>
@@ -298,7 +298,7 @@
     </div>
     <div class="more" style="margin-top:10px">
       <ul>
-        <li><strong>이노션</strong> (2021.08 – 2022.01) — 채널현대 스마트TV 앱 Google Analytics 사용자 행동 분석, 광고주 Monthly Insight Report</li>
+        <li><strong>이노션</strong> (2021.08 – 2022.01) — 채널현대 스마트TV 앱 Google Analytics 사용자 행동 분석, 광고주 Monthly Report</li>
         <li><strong>에쓰푸드</strong> (2019.03 – 2019.12) — B2C 상품기획·매출 분석, 신제품 1종 기획~출시 리딩</li>
       </ul>
     </div>
@@ -313,7 +313,7 @@
     <div class="skill"><div class="cat">CDP / CRM</div><div class="items">Treasure Data · mParticle · Salesforce · ADID · Audience Enrichment</div></div>
     <div class="skill"><div class="cat">Data Integration</div><div class="items">Data Lake · API · Postback · Schema/Taxonomy Mapping · 매체 데이터 온보딩</div></div>
     <div class="skill"><div class="cat">AI Workflow</div><div class="items">Claude CLI · LLM Wiki · 업무 규칙/예외의 구조화 · 재사용형 분석 자동화</div></div>
-    <div class="skill"><div class="cat">BI &amp; Collaboration</div><div class="items">Tableau · Streamlit · Git/GitHub (PR·코드리뷰) · Notion · Slack</div></div>
+    <div class="skill"><div class="cat">BI &amp; Collaboration</div><div class="items">Tableau · Streamlit · Git/GitHub (PR 협업) · Notion · Slack</div></div>
   </div>
 </section>
 
@@ -324,7 +324,7 @@
 </section>
 
 <footer>
-  <p>본 페이지의 광고주명은 비밀유지 의무에 따라 익명 처리했습니다. 상세 경력기술서와 이력서 PDF는 요청 시 제공합니다.</p>
+  <p>본 페이지의 광고주명은 익명 처리했습니다. 상세 경력기술서와 이력서 PDF는 요청 시 제공합니다.</p>
   <p>© 2026 Yang Seungbin · Last updated 2026.08</p>
 </footer>
 
